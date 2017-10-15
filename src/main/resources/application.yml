@@ -1,0 +1,19 @@
+# Set the server Port
+server:
+  port: ${PORT:8761}
+  
+# Name of the application - eureka
+spring: 
+  application:
+    name: discovery-service
+
+# Configuration of Eureka server.
+eureka:  
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    enableSelfPreservation: false  
+
